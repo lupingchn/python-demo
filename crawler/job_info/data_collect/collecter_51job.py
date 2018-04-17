@@ -1,10 +1,11 @@
 # coding=utf-8
 import requests
 import lxml.etree as etree
-import str.StrUtil as strutil
+import str.str_util as strutil
 from crawler.job_info.util.model_items import JobInfo
 import crawler.job_info.util.crawler_util as crawler_util
 import time
+import traceback
 extra_company_name = crawler_util.get_extra_company_array()
 exit_url_array = crawler_util.get_exit_job_url()
 company_new_job = []

@@ -1,6 +1,6 @@
 # coding=utf-8
 import lxml.etree as etree
-import str.StrUtil as strutil
+import str.str_util as strutil
 from crawler.job_info.util.model_items import JobInfo
 import crawler.job_info.util.crawler_util as crawler_util
 from bs4 import BeautifulSoup
@@ -58,7 +58,7 @@ def parse_job_base_info_result(url, company_type_pre):
             if job_href[0] == '/':
                 job_href = 'https://www.liepin.com' + job_href
             if company_name is not None and len(company_name) > 0:
-                company_name = strutil.unicode_to_utf8(crawler_util.remove_all_blank(company_name[0]))
+                company_name = strutil.unicode_to_utf8(strutil.remove_all_blank(company_name[0]))
         # 如果公司在忽略公司的列表里面，则忽略该职位
         if company_name in extra_company_name:
             continue
@@ -144,16 +144,16 @@ def get_job_item_from_url(job_url, company_type_pre):
         elif bs2.find('div',class_='job-item main-message') is not None:
             job_des = bs2.find('div',class_='job-item main-message').find('div',class_='content content-word').text
 
-        job_item.name = strutil.unicode_to_utf8(crawler_util.remove_all_blank(name))
-        job_item.company_name = strutil.unicode_to_utf8(crawler_util.remove_all_blank(company_name))
-        job_item.company_type = strutil.unicode_to_utf8(crawler_util.remove_all_blank(company_type))
-        job_item.publish_time = strutil.unicode_to_utf8(crawler_util.remove_all_blank(publish_time))
-        job_item.address = strutil.unicode_to_utf8(crawler_util.remove_all_blank(address))
-        job_item.des = strutil.unicode_to_utf8(crawler_util.remove_all_blank(job_des).replace('\'',''))
-        job_item.education = strutil.unicode_to_utf8(crawler_util.remove_all_blank(education))
-        job_item.exp = strutil.unicode_to_utf8(crawler_util.remove_all_blank(exp))
-        job_item.pay = strutil.unicode_to_utf8(crawler_util.remove_all_blank(pay))
-        job_item.url = strutil.unicode_to_utf8(crawler_util.remove_all_blank(job_url))
+        job_item.name = strutil.unicode_to_utf8(strutil.remove_all_blank(name))
+        job_item.company_name = strutil.unicode_to_utf8(strutil.remove_all_blank(company_name))
+        job_item.company_type = strutil.unicode_to_utf8(strutil.remove_all_blank(company_type))
+        job_item.publish_time = strutil.unicode_to_utf8(strutil.remove_all_blank(publish_time))
+        job_item.address = strutil.unicode_to_utf8(strutil.remove_all_blank(address))
+        job_item.des = strutil.unicode_to_utf8(strutil.remove_all_blank(job_des).replace('\'',''))
+        job_item.education = strutil.unicode_to_utf8(strutil.remove_all_blank(education))
+        job_item.exp = strutil.unicode_to_utf8(strutil.remove_all_blank(exp))
+        job_item.pay = strutil.unicode_to_utf8(strutil.remove_all_blank(pay))
+        job_item.url = strutil.unicode_to_utf8(strutil.remove_all_blank(job_url))
 
         # 增加每个招聘信息获取后结束后存储数据库的操作
         sql = crawler_util.gen_insert_item_sql(job_item, 'job_data')

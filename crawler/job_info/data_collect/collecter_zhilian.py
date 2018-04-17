@@ -2,7 +2,7 @@
 import requests
 import re
 import lxml.etree as etree
-import str.StrUtil as strutil
+import str.str_util as strutil
 from crawler.job_info.util.model_items import JobInfo
 import crawler.job_info.util.crawler_util as crawler_util
 import time

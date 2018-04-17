@@ -1,9 +1,9 @@
 # coding=utf-8
 
 import pymysql
-import re
 from crawler.job_info.util.model_items import CompanyInfo
 import time
+import re
 
 # 获取数据库中已忽略的公司列表
 def get_extra_company_array():
@@ -120,8 +120,3 @@ def filter_tags(htmlstr):
     s = s.replace('\r','')
     s = s.replace('\n','')
     return s
-
-
-def remove_all_blank(a):
-    b = re.sub('\s','',a)
-    return b

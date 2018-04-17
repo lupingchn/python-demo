@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74bf04b8-4f6f-404f-b0ee-527558f35756" name="Default" comment="" />
+    <list default="true" id="74bf04b8-4f6f-404f-b0ee-527558f35756" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/HR/__init__.py" afterPath="$PROJECT_DIR$/excel/__init__.py" />
+      <change beforePath="$PROJECT_DIR$/HR/timechecker.py" afterPath="$PROJECT_DIR$/excel/timechecker.py" />
+    </list>
     <ignored path="python-demo.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -45,11 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SSHCmdExcute.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SSHCmdExcute.py" pinned="false" current-in-tab="false">
         <entry file="file://E:/01.产品及项目/10_配置及仿真测试系统产品库/01 技术库/自动编译系统/地面控制设备软件自动编译平台GCP/02-源代码/gcp/WebContent/file/python/local/TSRS-TH TSRS/SSHCmdExcute.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="timechecker.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/excel/timechecker.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="47" column="51" lean-forward="true" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -196,7 +209,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1974" />
     <option name="y" value="-8" />
     <option name="width" value="1874" />
@@ -226,6 +239,11 @@
             <path>
               <item name="python-demo" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python-demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python-demo" type="462c0819:PsiDirectoryNode" />
+              <item name="excel" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -601,7 +619,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1974" y="-8" width="1874" height="1096" extended-state="7" />
+    <frame x="1974" y="-8" width="1874" height="1096" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44698206" sideWeight="0.5040486" order="8" side_tool="true" content_ui="tabs" />
@@ -964,13 +982,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HR/timechecker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="47" column="51" lean-forward="true" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawler/job_info/data_collect/collecter_51job.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1672">
@@ -1015,6 +1026,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="23" column="15" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/excel/timechecker.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="47" column="51" lean-forward="true" selection-start-line="47" selection-start-column="51" selection-end-line="47" selection-end-column="51" />
           <folding />
         </state>
       </provider>

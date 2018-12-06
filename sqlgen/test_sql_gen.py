@@ -8,7 +8,7 @@ from xlrd import xldate_as_tuple
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-table_name = "cashflow"
+table_name = "test"
 # replace_security_dict = {"119412": "669272",
 #                          "119413": "669273",
 #                          "119414": "669274",
@@ -49,7 +49,7 @@ title_row_index = 0
 data_col_index = 1
 
 
-def genSQLtxt(file="abs_mall_" + table_name + ".xls"):
+def genSQLtxt(file="test_table_" + table_name + ".xls"):
     tables = excel_table(file)
     return
 
